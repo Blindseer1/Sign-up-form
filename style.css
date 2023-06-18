@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+:root
+{
+    --font-var:sans-serif;
+}
+h1
+{
+    color:white;
+    font-family: 'Norse';
+    letter-spacing: 3px; 
+   font-size: 200px;
+  
+   opacity: 1;
+    display: flex;
+    
+   
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:row ;
+    flex-grow: 0;
+}
+
+#logo
+{
+   
+    height: 12vh;
+    
+    opacity: 1;
+}
+#right-container
+{
+   display: inline-block;
+    background-color: rgb(48, 11, 48);
+    width: 60vw;
+    height: 100vh;
+   
+    
+}
+form
+{
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    font-size: 90px;
+    font-family: sans-serif;
+    background-color: rgb(136, 49, 132);
+    position: relative;
+    top:8vh;
+    height: 35vh;
+    color:white
+    
+}
+
+.left-side
+{
+    height: 100vh;
+    width:40vw;
+    margin:0;
+    padding:0px;
+    overflow: hidden;
+    position: relative;
+}
+#the-video
+{
+    object-fit: cover;
+    position: relative;
+    top:0;
+    right:0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.dark-div
+{
+    position: absolute;
+    width:100%;
+    height: 20vh;
+    top:20vh;
+    background-color: black;
+    padding:10px;
+  
+    opacity: 0.5;
+   
+}
+.normal-div
+{
+    position: absolute;
+    width:100%;
+    height: 20vh;
+    top:20vh;
+    background-color: none;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+   
+   
+}
+.a-div
+{
+    font-family: var(--font-var);
+    font-size: 120px;
+    color: white;
+}
+.b-div>b
+{
+    font-family: var(--font-var);
+    font-size: 90px;
+}
+input
+{
+    border-color: #E5E7EB;
+    border-width:12px ;
+    border-radius: 10px;
+  
+    width:900px;
+    font-size: 90px;;
+}
+form>div>div
+{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+form>div
+{
+    display: flex;
+    flex-direction: row;
+   gap: 90px;
+   margin: 20px 600px 20px 30px;
+   justify-content: space-between;
+}
+input:focus
+{
+    border-color: rgb(90, 90, 238);
+    box-shadow: 8px 9px 19px rgba(122, 118, 180, 0.918);
+}
+label.required::after
+{
+    content: "*";
+    font-size: 90px;
+    position: absolute;
+}
+
+input:invalid
+{
+    border-color:red;
+}
+input:invalid +span::after
+{
+    content: 'Passwords do not match';
+    font-size: 60px;
+    color:red;
+
+}
+button
+{
+    display: block;
+    background-color:#3d0c2d;
+    color:white;
+    font-size:90px;
+    padding:50px 80px;
+    font-weight: bold;
+    top:8vh;
+    position: relative;
+}   
+button:hover
+{
+   
+    background-color: #5a1242;
+}
